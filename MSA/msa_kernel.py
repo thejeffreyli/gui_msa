@@ -26,6 +26,7 @@ class MSA_Func:
         print (output)
         return output
 
+    # read data
     def read_data(self, order, symmetry, train_x):
         
         arg = order +' '+ symmetry
