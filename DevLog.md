@@ -15,7 +15,7 @@ Updates:
 * Ubuntu 20.04 - Linux Environment (Windows Store)
 * build-essential (g++ compiler, sudo apt-get install build-essential)
 * [Intel oneAPI Base Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html): 
-
+    (1) 
 * [Intel oneAPI HPC Toolkit](https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit-download.html)
 * Helpful [link](https://estuarine.jp/2021/03/install-oneapi/?lang=en) for tips on properly installing iFort 
 
