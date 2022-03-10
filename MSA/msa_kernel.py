@@ -56,6 +56,32 @@ class MSA_Func:
         f.close()
         print("PASS")
         
-        print('1. Input file info:')
-        print('Number of atoms is : ' + str (natom))
-        print('Number of configurations is: '+str(nconfig)+'\n')
+        
+        #  natom, nconfig
+        
+        
+        f = open('./src/basis.f90')
+        nol=1 #Num of lines in file
+        for line in f:
+          if nol==8:
+            ncoeff = int(line.split(':')[1].split(')')[0])
+            ncoeff = ncoeff + 1
+          if nol==24:
+            nmonomial = int(line.split(':')[1].split(')')[0])
+            nmonomial = nmonomial + 1
+            break
+          nol=nol+1
+        f.close()
+        
+        # order, symmetry, ncoeff
+        
+        
+        return natom, nconfig, order, symmetry, ncoeff
+        
+
+    def update(self, order, symmetry, train_x):
+        
+        self.read_data(self, order, symmetry, train_x)
+        
+        
+        return 

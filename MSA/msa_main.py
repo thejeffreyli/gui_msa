@@ -9,7 +9,7 @@ import sys
 import logging
 
 
-# pyuic5 -x test.ui -o test_ui.py
+# pyuic5 -x msa.ui -o msa_ui.py
 
 # GUI Class
 class testWin(QtWidgets.QMainWindow, Ui):
@@ -21,14 +21,21 @@ class testWin(QtWidgets.QMainWindow, Ui):
 
         self.button1.clicked.connect(self.load)
         
+        
+        
     # load data        
     def load(self):
         
         order = self.lineEdit.text()
         symmetry = self.lineEdit_2.text()
         train_x = self.lineEdit_3.text()
-        self.mk.read_data(order, symmetry, train_x)
         
+        
+        self.label_9.setText(str(4))
+        # self.mk.update(order, symmetry, train_x)
+        
+    def create_dict(self):
+        return 
 
 # run GUI
 def run():

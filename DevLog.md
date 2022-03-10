@@ -36,7 +36,7 @@ GUI Development:
 
 ### March 8, 2022 (Day 1)
 Updates:
-
+* Designing template for GUI. Testing inputs and outputs. 
 * Inputs: 
     (1) Please input the maximum order of the polynomial: int value, ex: 4
     (2) Please input the maximum order of the polynomial: int values separated by space, ex: 2 2 1
@@ -50,3 +50,8 @@ Updates:
     Given polynomial order: 4
     Given symmetry: 2 2 1
     Number of coefficients is: 323
+
+
+### March 9, 2022 (Day 2)
+Updates:
+* Implementing backend logic. 
