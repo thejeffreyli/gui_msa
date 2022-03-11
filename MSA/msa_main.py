@@ -47,7 +47,7 @@ class testWin(QtWidgets.QMainWindow, Ui):
         
         return outputs
     
-    def  
+       
     
 
 # run GUI
