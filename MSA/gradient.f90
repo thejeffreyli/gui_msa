@@ -44,7 +44,7 @@ contains
     !::::::::::::::::::::
     real::a
 
-    a = 2.5d0
+    a = 3d0
 
     dm(0) = 0.0D0
     dm(1) = -m(1)/a*drdx(flag,10)

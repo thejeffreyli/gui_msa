@@ -29,10 +29,9 @@ class MSA_Func:
     # read data
     def read_data(self, order, symmetry, train_x):
         
+        print("pass_1")
+        
         arg = order +' '+ symmetry
-
-        print("")
-        print("Generating the fitting bases... (This might take time) \n")
 
         self.cl('''
         cd src
@@ -53,9 +52,7 @@ class MSA_Func:
           if nol==1:
             natom=int(line)
         nconfig = nol/(natom+2)
-        f.close()
-        print("PASS")
-        
+        f.close()        
         
         #  natom, nconfig
         
@@ -79,9 +76,17 @@ class MSA_Func:
         return natom, nconfig, order, symmetry, ncoeff
         
 
-    def update(self, order, symmetry, train_x):
+    def update(self, order, symmetry, train_x, outputs):
         
-        self.read_data(self, order, symmetry, train_x)
+        natom, nconfig, order, symmetry, ncoeff = self.read_data(order, symmetry, train_x)
+        print("pass_2")
+        
+        outputs["num_atoms"] = natom
+        outputs["num_conf"] = nconfig
+        outputs["poly_order"] = order
+        outputs["symm"] = symmetry
+        outputs["num_coef"] = ncoeff
         
         
-        return 
+        
+        return outputs

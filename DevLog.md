@@ -54,4 +54,32 @@ Updates:
 
 ### March 9, 2022 (Day 2)
 Updates:
-* Implementing backend logic. 
+* Implementing backend logic for inputs and outputs.
+
+### March 11, 2022 (Day 3)
+Updates:
+* Update values for outputs into display.
+* 
+We can apply weight in the fitting, and the weight of each point is given by
+wt = E0/(E0+dE), where dE is the energy of that point relative to the minium.
+E0 is a user-specified parameter (in unit Hartree).
+
+If you would like to apply the weight, please input the E0 parameter. Otherwise
+please enter "n":
+n
+
+
+Please specify the a0 parameter (in unit Bohr) used in Morse variable
+yij = exp(-rij/a0). The recommended range is 2.0-3.0 Bohr:
+3
+ifort: command line remark #10412: option '-mkl=sequential' is deprecated and will be removed in a future release. Please use the replacement option '-qmkl=sequential'
+b'ifort -r8 -O -c basis.f90\nifort -r8 -O -c fit.f90\nifort -r8 -O -o fit.x basis.o fit.o -mkl=sequential\n'
+Fitting... (This might take time)
+
+b'3. Fitting is finished: \nOverall Root-mean-square fitting error:    0.0001163307 Hartree\nWeighted Root-mean-square fitting error:    0.0001163307 Hartree\n'
+ifort: command line remark #10412: option '-mkl=sequential' is deprecated and will be removed in a future release. Please use the replacement option '-qmkl=sequential'
+b'ifort -r8 -O -c basis.f90\nifort -r8 -O -c gradient.f90\nifort -r8 -O -c pes_shell.f90\nifort -r8 -O -c getpot.f90\nifort -r8 -O -o getpot.x basis.o gradient.o pes_shell.o getpot.o -mkl=sequential\n'
+4. In order to run the test program, use command:
+./getpot.x test.xyz
+
+End of program

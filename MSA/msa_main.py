@@ -20,22 +20,35 @@ class testWin(QtWidgets.QMainWindow, Ui):
         self.mk = MSA_Func()
 
         self.button1.clicked.connect(self.load)
-        
+        self.button2.clicked.connect(self.load)
+        # self.button3.clicked.connect()
         
         
     # load data        
     def load(self):
-        
+        outputs = self.create_dict()
         order = self.lineEdit.text()
         symmetry = self.lineEdit_2.text()
         train_x = self.lineEdit_3.text()
         
         
-        self.label_9.setText(str(4))
-        # self.mk.update(order, symmetry, train_x)
+        # self.label_9.setText(str(4))
+        outputs = self.mk.update(order, symmetry, train_x, outputs)
+        
+        self.textBrowser.setText(str(outputs["num_atoms"]))
+        self.textBrowser_2.setText(str(outputs["num_conf"]))
+        self.textBrowser_3.setText(str(outputs["poly_order"]))
+        self.textBrowser_4.setText(str(outputs["symm"]))
+        self.textBrowser_5.setText(str(outputs["num_coef"]))
         
     def create_dict(self):
-        return 
+        outputs = {"num_atoms": 0, "num_conf": 0, "poly_order": 0, "symm": 0,
+                   "num_coef": 0}
+        
+        return outputs
+    
+    def  
+    
 
 # run GUI
 def run():
