@@ -19,7 +19,7 @@ implicit none
   ncoeff=323       ! change to the number of coeff. (size of c in bemsa.f90)
   data_size=44623.0    ! change to the number of data points in pts.dat
   a0=3d0
-  dwt=3
+  dwt=1.e10
 
   ndis=natm*(natm-1)/2
 

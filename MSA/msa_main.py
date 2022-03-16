@@ -4,12 +4,15 @@ from msa_kernel import MSA_Func
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QFileDialog
 
+from PyQt5.QtWidgets import QApplication
+
 import os
 import sys
 import logging
-
+import time
 
 # pyuic5 -x msa.ui -o msa_ui.py
+# source /opt/intel/oneapi/setvars.sh
 
 # GUI Class
 class testWin(QtWidgets.QMainWindow, Ui):
@@ -19,37 +22,55 @@ class testWin(QtWidgets.QMainWindow, Ui):
         self.setupUi(self)
         self.mk = MSA_Func()
 
-        self.button1.clicked.connect(self.load)
-        self.button2.clicked.connect(self.load)
-        # self.button3.clicked.connect()
-        
+        self.button1.clicked.connect(self.load) # generate basis
+        self.button2.clicked.connect(self.test_1) # yes: saves values
+        self.button3.clicked.connect(self.test_2) # no: saves and exit
+        self.button4.clicked.connect(self.weights) # weights
+        self.button5.clicked.connect(self.param) # parameters
+        # self.button5.clicked.connect(self.test_2) # save
         
     # load data        
     def load(self):
-        outputs = self.create_dict()
         order = self.lineEdit.text()
         symmetry = self.lineEdit_2.text()
         train_x = self.lineEdit_3.text()
         
-        
         # self.label_9.setText(str(4))
-        outputs = self.mk.update(order, symmetry, train_x, outputs)
+        self.mk.read_data(order, symmetry, train_x)
         
-        self.textBrowser.setText(str(outputs["num_atoms"]))
-        self.textBrowser_2.setText(str(outputs["num_conf"]))
-        self.textBrowser_3.setText(str(outputs["poly_order"]))
-        self.textBrowser_4.setText(str(outputs["symm"]))
-        self.textBrowser_5.setText(str(outputs["num_coef"]))
+        self.textBrowser.setText(str(self.mk.outputs["natom"]))
+        self.textBrowser_2.setText(str(self.mk.outputs["nconfig"]))
+        self.textBrowser_3.setText(str(self.mk.outputs["order"]))
+        self.textBrowser_4.setText(str(self.mk.outputs["symmetry"]))
+        self.textBrowser_5.setText(str(self.mk.outputs["ncoeff"]))
         
-    def create_dict(self):
-        outputs = {"num_atoms": 0, "num_conf": 0, "poly_order": 0, "symm": 0,
-                   "num_coef": 0}
-        
-        return outputs
-    
-       
-    
 
+    def test_1(self):
+        # TODO
+        return
+    
+    def test_2(self):
+        # TODO
+        QApplication.quit() 
+        return
+    
+    def weights(self):
+        ans = self.lineEdit_4.text()
+        if ans=='n':
+            wt = '1.e10'
+        else:
+            wt = ans
+        print(wt)
+        self.mk.update_wt(wt)
+        
+    def param(self):
+        ans = self.lineEdit_5.text()
+        a0 = ans+'d0'
+        print(a0)
+        self.mk.update_a0(a0)
+        
+        
+        
 # run GUI
 def run():
 
@@ -62,27 +83,3 @@ def run():
 if __name__ == '__main__':
     run()
     
-'''
-
-    def load(self):
-        fname = self.fname.text()
-        blemish_fname = self.blemish_fname.text()
-        text_fname = self.text_fname.text() 
-
-
-        if not os.path.isfile(blemish_fname):
-            blemish_fname = None
-        if not os.path.isfile(fname):
-            return
-
-        self.sm.read_data(fname, blemish_fname, text_fname)
-
-        self.db_cenx.setValue(self.sm.meta['bcx'])
-        self.db_ceny.setValue(self.sm.meta['bcy'])
-        self.db_energy.setValue(self.sm.meta['energy'])
-        self.db_pix_dim.setValue(self.sm.meta['pix_dim'])
-        self.db_det_dist.setValue(self.sm.meta['det_dist'])
-        self.le_shape.setText(str(self.sm.shape))
-        self.groupBox.repaint()
-        self.plot()
-'''

@@ -36,7 +36,7 @@ GUI Development:
 
 ### March 8, 2022 (Day 1)
 Updates:
-* Designing template for GUI. Testing inputs and outputs. 
+* Begin designing template for first stage of workflow. Example process shown below. 
 * Inputs: 
     (1) Please input the maximum order of the polynomial: int value, ex: 4
     (2) Please input the maximum order of the polynomial: int values separated by space, ex: 2 2 1
@@ -50,16 +50,18 @@ Updates:
     Given polynomial order: 4
     Given symmetry: 2 2 1
     Number of coefficients is: 323
+* Testing inputs and outputs. 
+* Explanation: User inputs three values into GUI. GUI will output and display five values for user. User can decide to proceed or not to proceed given information. 
 
 
 ### March 9, 2022 (Day 2)
 Updates:
-* Implementing backend logic for inputs and outputs.
+* Implementing backend logic for inputs and outputs. This includes number inputs and button functions.
 
 ### March 11, 2022 (Day 3)
 Updates:
-* Update values for outputs into display.
-* 
+* Display output values onto GUI.
+* Designed template for remaining workflow. Example process shown below. 
 We can apply weight in the fitting, and the weight of each point is given by
 wt = E0/(E0+dE), where dE is the energy of that point relative to the minium.
 E0 is a user-specified parameter (in unit Hartree).
@@ -83,3 +85,19 @@ b'ifort -r8 -O -c basis.f90\nifort -r8 -O -c gradient.f90\nifort -r8 -O -c pes_s
 ./getpot.x test.xyz
 
 End of program
+
+### March 12, 2022 (Day 4)
+Updates:
+* Encounter error message whenever attempting to run GUI on Ubuntu. Tried troubleshooting and Google. Will have to ask Chen for assistance. 
+
+qt.qpa.xcb: could not connect to display
+qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.
+This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+
+Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, vnc, wayland-egl, wayland, wayland-xcomposite-egl, wayland-xcomposite-glx, webgl, xcb.
+
+Aborted (core dumped)
+
+### March 14, 2022 (Day 5)
+Updates:
+* Decided to work more on developing backend logic to not waste time. Using sample input/outputs. 
