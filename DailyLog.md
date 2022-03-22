@@ -36,7 +36,7 @@ Working in Ubuntu 20.04:
 * [Anaconda for Linux](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
 
 
-## Week 1: 
+## Week 1: Developing Workflow and Backend Logic
 
 ### March 8, 2022 (Day 1)
 Updates:
@@ -103,6 +103,10 @@ Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, 
 
 Aborted (core dumped)
 
+
+## Week 2: Overcoming Linux Error
+
+
 ### March 14-15, 2022 (Day 5 and 6)
 Updates:
 * Decided to work more on developing backend logic to not waste time. Using sample input/outputs. 
@@ -125,6 +129,8 @@ Updates:
 * Asked Chen for assistance with transferring data from Fortran to Python, since fitting was performed in f90. He suggested saving in temp file and reading file to Python. He provided revised msa.py. 
 * Modified Chen's code to suit msa_kernel.py. Instead of saving file as temp, I saved as txt file. 
 * Fitting results are displayed on GUI. 
+
+## Week 3: Cleaning Code and Documenting
 
 ### March 22, 2022 (Day 10)
 * Made some revisions in GUI template to improve readability and design. 

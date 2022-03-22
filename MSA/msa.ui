@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>881</width>
-    <height>783</height>
+    <width>877</width>
+    <height>774</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -458,8 +458,8 @@ yij = exp(-rij/a0). The recommended range is 2.0-3.0 Bohr.</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>881</width>
-     <height>21</height>
+     <width>877</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
