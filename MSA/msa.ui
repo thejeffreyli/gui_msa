@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>802</width>
-    <height>870</height>
+    <width>877</width>
+    <height>774</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
       <x>30</x>
       <y>10</y>
       <width>261</width>
-      <height>211</height>
+      <height>231</height>
      </rect>
     </property>
     <property name="title">
@@ -29,7 +29,7 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>46</x>
+       <x>10</x>
        <y>30</y>
        <width>55</width>
        <height>21</height>
@@ -42,7 +42,7 @@
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>10</x>
        <y>90</y>
        <width>71</width>
        <height>21</height>
@@ -109,165 +109,11 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>10</y>
-      <width>261</width>
-      <height>211</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Output</string>
-    </property>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>20</y>
-       <width>61</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Num Atoms</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_5">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>50</y>
-       <width>111</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Num Configurations</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>80</y>
-       <width>81</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Polynomial Order</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_7">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>110</y>
-       <width>81</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Symmetry</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_8">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>140</y>
-       <width>81</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Num Coefficients</string>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="textBrowser">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>20</y>
-       <width>101</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="textBrowser_2">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>50</y>
-       <width>101</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="textBrowser_3">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>80</y>
-       <width>101</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="textBrowser_4">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>110</y>
-       <width>101</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QTextBrowser" name="textBrowser_5">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>140</y>
-       <width>101</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="button2">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>170</y>
-       <width>93</width>
-       <height>28</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Continue</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="button3">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>170</y>
-       <width>93</width>
-       <height>28</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Exit</string>
-     </property>
-    </widget>
-   </widget>
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>220</y>
+      <y>240</y>
       <width>531</width>
       <height>131</height>
      </rect>
@@ -278,15 +124,15 @@
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>361</width>
+       <x>10</x>
+       <y>30</y>
+       <width>371</width>
        <height>91</height>
       </rect>
      </property>
      <property name="text">
       <string>We can apply weight in the fitting, and the weight of each point is given by
-wt = E0/(E0+dE), where dE is the energy of that point relative to the minium.
+wt = E0/(E0+dE), where dE is the energy of that point relative to the minimum.
 E0 is a user-specified parameter (in unit Hartree).
 
 If you would like to apply the weight, please input the E0 parameter. Otherwise
@@ -296,8 +142,8 @@ please enter &quot;n&quot;.</string>
     <widget class="QLineEdit" name="lineEdit_4">
      <property name="geometry">
       <rect>
-       <x>410</x>
-       <y>40</y>
+       <x>400</x>
+       <y>50</y>
        <width>113</width>
        <height>22</height>
       </rect>
@@ -306,8 +152,8 @@ please enter &quot;n&quot;.</string>
     <widget class="QPushButton" name="button4">
      <property name="geometry">
       <rect>
-       <x>430</x>
-       <y>70</y>
+       <x>420</x>
+       <y>80</y>
        <width>93</width>
        <height>28</height>
       </rect>
@@ -321,9 +167,9 @@ please enter &quot;n&quot;.</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>350</y>
+      <y>370</y>
       <width>531</width>
-      <height>101</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="title">
@@ -332,9 +178,9 @@ please enter &quot;n&quot;.</string>
     <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>371</width>
+       <x>10</x>
+       <y>30</y>
+       <width>361</width>
        <height>51</height>
       </rect>
      </property>
@@ -346,8 +192,8 @@ yij = exp(-rij/a0). The recommended range is 2.0-3.0 Bohr.</string>
     <widget class="QLineEdit" name="lineEdit_5">
      <property name="geometry">
       <rect>
-       <x>410</x>
-       <y>20</y>
+       <x>400</x>
+       <y>40</y>
        <width>113</width>
        <height>22</height>
       </rect>
@@ -356,8 +202,8 @@ yij = exp(-rij/a0). The recommended range is 2.0-3.0 Bohr.</string>
     <widget class="QPushButton" name="button5">
      <property name="geometry">
       <rect>
-       <x>430</x>
-       <y>50</y>
+       <x>420</x>
+       <y>70</y>
        <width>93</width>
        <height>28</height>
       </rect>
@@ -371,65 +217,78 @@ yij = exp(-rij/a0). The recommended range is 2.0-3.0 Bohr.</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>450</y>
+      <y>480</y>
       <width>531</width>
-      <height>91</height>
+      <height>101</height>
      </rect>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string>Fitting</string>
     </property>
     <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>20</y>
+       <x>10</x>
+       <y>30</y>
        <width>181</width>
        <height>16</height>
       </rect>
      </property>
      <property name="text">
-      <string>Overall Root-mean-square fitting error:</string>
+      <string>Overall RMSE:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>10</x>
        <y>60</y>
-       <width>201</width>
+       <width>81</width>
        <height>16</height>
       </rect>
      </property>
      <property name="text">
-      <string>Weighted Root-mean-square fitting error:</string>
+      <string>Weighted RMSE:</string>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_6">
      <property name="geometry">
       <rect>
-       <x>240</x>
-       <y>20</y>
-       <width>101</width>
-       <height>20</height>
+       <x>160</x>
+       <y>30</y>
+       <width>111</width>
+       <height>21</height>
       </rect>
      </property>
     </widget>
     <widget class="QTextBrowser" name="textBrowser_7">
      <property name="geometry">
       <rect>
-       <x>240</x>
-       <y>60</y>
-       <width>101</width>
-       <height>20</height>
+       <x>160</x>
+       <y>59</y>
+       <width>111</width>
+       <height>21</height>
       </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button7">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Exit</string>
      </property>
     </widget>
     <widget class="QPushButton" name="button6">
      <property name="geometry">
       <rect>
-       <x>430</x>
-       <y>10</y>
+       <x>320</x>
+       <y>50</y>
        <width>93</width>
        <height>28</height>
       </rect>
@@ -438,11 +297,152 @@ yij = exp(-rij/a0). The recommended range is 2.0-3.0 Bohr.</string>
       <string>Compute</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="button7">
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>261</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Output</string>
+    </property>
+    <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>430</x>
-       <y>50</y>
+       <x>10</x>
+       <y>30</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Num Atoms</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Num Configurations</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Polynomial Order</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Symmetry</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Num Coefficients</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>30</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_2">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>90</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_4">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>120</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_5">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>150</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>180</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Continue</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button3">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>180</y>
        <width>93</width>
        <height>28</height>
       </rect>
@@ -458,7 +458,7 @@ yij = exp(-rij/a0). The recommended range is 2.0-3.0 Bohr.</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>802</width>
+     <width>877</width>
      <height>26</height>
     </rect>
    </property>

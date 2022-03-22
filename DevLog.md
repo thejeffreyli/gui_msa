@@ -36,7 +36,7 @@ GUI Development:
 
 ### March 8, 2022 (Day 1)
 Updates:
-* Begin designing template for first stage of workflow. Example process shown below. 
+* Begin designing template for first stage of workflow using QtDesigner. Example process shown below. 
 * Inputs: 
     (1) Please input the maximum order of the polynomial: int value, ex: 4
     (2) Please input the maximum order of the polynomial: int values separated by space, ex: 2 2 1
@@ -85,10 +85,11 @@ b'ifort -r8 -O -c basis.f90\nifort -r8 -O -c gradient.f90\nifort -r8 -O -c pes_s
 ./getpot.x test.xyz
 
 End of program
+* Explanation: User will need to specify weight and a0 parameters. Then, the RMS fitting will be computed. 
 
 ### March 12, 2022 (Day 4)
 Updates:
-* Encounter error message whenever attempting to run GUI on Ubuntu. Tried troubleshooting and Google. Will have to ask Chen for assistance. 
+* Encountered error message whenever attempting to run GUI on Ubuntu. Tried troubleshooting and Google. Will have to ask Chen for assistance. 
 
 qt.qpa.xcb: could not connect to display
 qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.
@@ -98,6 +99,21 @@ Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, 
 
 Aborted (core dumped)
 
-### March 14, 2022 (Day 5)
+### March 14-15, 2022 (Day 5 and 6)
 Updates:
 * Decided to work more on developing backend logic to not waste time. Using sample input/outputs. 
+* Impemented universal dictionary to easily store and access values. 
+* Added functions to existing buttons. 
+* Transferred/Converted remaining msa.py code into msa_kernel.py. 
+
+### March 17, 2022 (Day 7)
+Updates:
+* Installed Anaconda for Linux. 
+* Installed Xming for Windwos (for graphics).
+* Chen's instructions for overcoming errors. 
+First open Xming. Xming will be running in the background so you won’t notice it’s running until you run Linux applications that has GUI.
+Open your Ubuntu terminal and go to your home directory. You can use a shortcut command “cd ~” to go to your home directory.
+Type command “ls -a” and see if you can find a file called “.bashrc” (or sometimes you cannot find “.bashrc” but a “.bash_profile” exists.) Finding either of them is fine. Note the file name starts with a dot. These files are hidden in Linux, but “-a” flag in the “ls” command allows you to see all the hidden files.
+Modify the “.bashrc” (or “.bash_profile”). Open it with your favorite Linux text editor and insert a line “export DISPLAY=127.0.0.1:0” (without the quotation marks) to that file and save it.
+Start a new Ubuntu terminal (the modification in .bashrc will only be effective in a new terminal). Try xclock in that new terminal and see if you still get that error.
+

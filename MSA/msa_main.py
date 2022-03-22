@@ -23,11 +23,12 @@ class testWin(QtWidgets.QMainWindow, Ui):
         self.mk = MSA_Func()
 
         self.button1.clicked.connect(self.load) # generate basis
-        self.button2.clicked.connect(self.test_1) # yes: saves values
-        self.button3.clicked.connect(self.test_2) # no: saves and exit
+        self.button2.clicked.connect(self.yes_func) # yes: saves values
+        self.button3.clicked.connect(self.no_func) # no: saves and exit
         self.button4.clicked.connect(self.weights) # weights
         self.button5.clicked.connect(self.param) # parameters
-        # self.button5.clicked.connect(self.test_2) # save
+        self.button6.clicked.connect(self.compute) # fitting
+        self.button7.clicked.connect(self.exit_) # saves and exit
         
     # load data        
     def load(self):
@@ -45,12 +46,19 @@ class testWin(QtWidgets.QMainWindow, Ui):
         self.textBrowser_5.setText(str(self.mk.outputs["ncoeff"]))
         
 
-    def test_1(self):
-        # TODO
+    def yes_func(self):
+        # save current dict as txt
+        with open("output.txt", 'w') as f: 
+            for key, value in self.mk.outputs.items(): 
+                f.write('%s: %s\n' % (key, value))
         return
     
-    def test_2(self):
-        # TODO
+    def no_func(self):
+        # save current dict as txt
+        with open("output.txt", 'w') as f: 
+            for key, value in self.mk.outputs.items(): 
+                f.write('%s: %s\n' % (key, value))     
+        # exit program
         QApplication.quit() 
         return
     
@@ -60,16 +68,27 @@ class testWin(QtWidgets.QMainWindow, Ui):
             wt = '1.e10'
         else:
             wt = ans
-        print(wt)
         self.mk.update_wt(wt)
         
     def param(self):
         ans = self.lineEdit_5.text()
         a0 = ans+'d0'
-        print(a0)
         self.mk.update_a0(a0)
         
+    def compute(self):
+        self.mk.process()
+        self.mk.extract_rmse()
+        self.textBrowser_6.setText(str(self.mk.outputs["rmse"]))
+        self.textBrowser_7.setText(str(self.mk.outputs["wrmse"]))
         
+    def exit_(self):
+        # save current dict as txt
+        with open("output.txt", 'w') as f: 
+            for key, value in self.mk.outputs.items(): 
+                f.write('%s: %s\n' % (key, value))   
+        # exit program
+        QApplication.quit()                 
+        return 
         
 # run GUI
 def run():

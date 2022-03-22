@@ -17,7 +17,7 @@ def cl(command):
     (output, err) = p.communicate()
     print (output)
     return output
-#<---------------------------------------------------------------------------------------------------------------
+
 order = raw_input('Please input the maximum order of the polynomial: ')
 symmetry = raw_input('Please input the permutation symmetry of the molecule: ')
 train_x = raw_input('Please input the name of the data file: ')
@@ -67,12 +67,12 @@ print('2. Polynomial info:')
 print('Given polynomial order: '+ order)
 print('Given symmetry: '+ symmetry)
 print ('Number of coefficients is: ' + str(ncoeff) +'\n')
-#<---------------------------------------------------------------------------------------------------------------
+
 ans = raw_input('Would you like to continue? y/n \n')
 if ans == 'n':
     print('Fitting program terminated')
     quit()
-#<---------------------------------------------------------------------------------------------------------------
+
 print("")
 ans = raw_input(
 '''We can apply weight in the fitting, and the weight of each point is given by
@@ -86,7 +86,7 @@ if ans=='n':
     wt = '1.e10'
 else:
     wt = ans
-#<---------------------------------------------------------------------------------------------------------------
+
 ans = raw_input(
 '''
 
@@ -124,6 +124,7 @@ implicit none
   open(10,file="coeff.dat",status='unknown')
   open(11,FILE="points.eng",status='unknown')
   open(12,file="'''+train_x+'''",status='old')
+  open(13,file="temp_rmse.txt",status="unknown")
 
   allocate(x(ndis))
   allocate(xyz(data_size,natm,3))
@@ -187,11 +188,14 @@ implicit none
   write(*,'(A)') '3. Fitting is finished: '
   write(*,'(A,F15.10,A)') 'Overall Root-mean-square fitting error: ', rmse , ' Hartree'
   write(*,'(A,F15.10,A)') 'Weighted Root-mean-square fitting error: ', wrmse , ' Hartree'
+  write(13,'(F15.10)') rmse
+  write(13,'(F15.10)') wrmse
 
   deallocate(xyz,x,v,b,p,yij,A,coeff,v_out,s,wt)
   close (10)
   close (11)
   close (12)
+  close (13)
 
 end program
 ''')
