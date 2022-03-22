@@ -31,6 +31,10 @@ GUI Development:
 * pyqt5-tools > [QtDesigner](https://doc.qt.io/qt-5/qtdesigner-manual.html) 
 * [Helpful tutorial](https://www.techwithtim.net/tutorials/pyqt5-tutorial/how-to-use-qtdesigner/)
 
+Working in Ubuntu 20.04:
+* [Xming](https://sourceforge.net/projects/xming/)
+* [Anaconda for Linux](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
+
 
 ## Week 1: 
 
@@ -109,11 +113,20 @@ Updates:
 ### March 17, 2022 (Day 7)
 Updates:
 * Installed Anaconda for Linux. 
-* Installed Xming for Windwos (for graphics).
+* Installed Xming for Windows (for graphics).
 * Chen's instructions for overcoming errors. 
-First open Xming. Xming will be running in the background so you won’t notice it’s running until you run Linux applications that has GUI.
-Open your Ubuntu terminal and go to your home directory. You can use a shortcut command “cd ~” to go to your home directory.
-Type command “ls -a” and see if you can find a file called “.bashrc” (or sometimes you cannot find “.bashrc” but a “.bash_profile” exists.) Finding either of them is fine. Note the file name starts with a dot. These files are hidden in Linux, but “-a” flag in the “ls” command allows you to see all the hidden files.
-Modify the “.bashrc” (or “.bash_profile”). Open it with your favorite Linux text editor and insert a line “export DISPLAY=127.0.0.1:0” (without the quotation marks) to that file and save it.
-Start a new Ubuntu terminal (the modification in .bashrc will only be effective in a new terminal). Try xclock in that new terminal and see if you still get that error.
+(1) First open Xming. Xming will be running in the background so you won’t notice it’s running until you run Linux applications that has GUI.
+(2) Open your Ubuntu terminal and go to your home directory. You can use a shortcut command “cd ~” to go to your home directory.
+(3) Type command “ls -a” and see if you can find a file called “.bashrc” (or sometimes you cannot find “.bashrc” but a “.bash_profile” exists.) Finding either of them is fine. Note the file name starts with a dot. These files are hidden in Linux, but “-a” flag in the “ls” command allows you to see all the hidden files.
+(4) Modify the “.bashrc” (or “.bash_profile”). Open it with your favorite Linux text editor and insert a line “export DISPLAY=127.0.0.1:0” (without the quotation marks) to that file and save it.
+(5) Start a new Ubuntu terminal (the modification in .bashrc will only be effective in a new terminal). Try xclock in that new terminal and see if you still get that error.
 
+### March 18-19, 2022 (Day 8 and 9)
+* Asked Chen for assistance with transferring data from Fortran to Python, since fitting was performed in f90. He suggested saving in temp file and reading file to Python. He provided revised msa.py. 
+* Modified Chen's code to suit msa_kernel.py. Instead of saving file as temp, I saved as txt file. 
+* Fitting results are displayed on GUI. 
+
+### March 22, 2022 (Day 10)
+* Made some revisions in GUI template to improve readability and design. 
+* Included functions for saving data into txt files before exiting program. 
+* Began documentation/guide of program.
