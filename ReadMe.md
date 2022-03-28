@@ -49,7 +49,8 @@ Input:
 * Data File Name: Input the name of the data file. (example: points.dat)
 * Generate Basis: Uses the data provided in previous steps to generate basis. 
 
-Output: The program displays the number of coefficients and the number of configurations in the data file. If the number of coefficients is too small (which leads to large fitting error) or too large (which may cause over-fitting), you can Exit the program and then pick another polynomial order. You can Continue if satisfied.
+Output: 
+* The program displays the number of coefficients and the number of configurations in the data file. If the number of coefficients is too small (which leads to large fitting error) or too large (which may cause over-fitting), you can Exit the program and then pick another polynomial order. You can Continue if satisfied.
 * Continue: Saves the values in an output.txt file. Moves on to next step.
 * Exit: Saves the values in an output.txt file and terminates program.
 
