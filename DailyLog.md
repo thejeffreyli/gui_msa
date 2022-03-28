@@ -2,15 +2,9 @@
 
 <br />
 
-### Original Work
+### Original Work by Kee Wang, Chen Qu, and Zhen Xie
 * [GitHub](https://github.com/Kee-Wang/PES-Fitting-MSA)
 * [Blog](https://scholarblogs.emory.edu/bowman/msa/)
-
-### Requirements
-To use MSA software, you need a
-* Fortran 90 and a C++ compiler;
-* "dgelss" subroutine from LAPACK
-* Perl and Python
 
 ### Software Used
 MSA Software:
@@ -24,7 +18,7 @@ MSA Software:
 * [Intel® oneAPI HPC Toolkit for Linux](https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit-download.html):
     (1) Intel® Fortran Compiler Classic
     (2) Intel® C++ Compiler Classic
-* Helpful [link](https://estuarine.jp/2021/03/install-oneapi/?lang=en) for tips on properly installing iFort. (i.e. source /opt/intel/oneapi/setvars.sh)
+* Helpful [link](https://estuarine.jp/2021/03/install-oneapi/?lang=en) for tips on properly installing iFort. <!--- (i.e. source /opt/intel/oneapi/setvars.sh) -->
 
 GUI Development:
 * PyQt5 5.15.6
