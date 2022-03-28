@@ -4,7 +4,7 @@
 
 TBA
 
-### Original Work by Kee Wang, Chen Qu, and Zhen Xie
+### Original Work by Kee Wang, Chen Qu, Zhen Xie, and Joel Bowman
 * [GitHub](https://github.com/Kee-Wang/PES-Fitting-MSA)
 * [Blog](https://scholarblogs.emory.edu/bowman/msa/)
 
@@ -39,8 +39,18 @@ Working in Ubuntu 20.04:
 * [Xming](https://sourceforge.net/projects/xming/)
 * [Anaconda for Linux](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
 
+### Instructions
+
+![Test](./versions/gui_msa_0.02/msa_0322.png)
+
 
 ### Acknowledgements
 
 Collaborators: Dr. Joel Bowman, Dr. Chen Qu
 If you have any questions, please contact [Jeffrey Li](jeffrey.k.li98@gmail.com).
+
+
+
+
+
+
