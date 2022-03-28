@@ -8,7 +8,7 @@
 
 ### Software Used
 MSA Software:
-* Python 3.8.8 / Spyder
+* Python 3.8.8 / Spyder 
 * [Perl 5.34.0](https://www.activestate.com/products/perl/)
 * Ubuntu 20.04 - Linux Environment (Windows Store)
 * build-essential (g++ compiler, sudo apt-get install build-essential)

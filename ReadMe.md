@@ -1,5 +1,9 @@
 ## Python Graphical User Interface (GUI) Application for Monomial Symmetrization for Potential Energy Surface (PES) Fitting
 
+### Description
+
+TBA
+
 ### Original Work by Kee Wang, Chen Qu, and Zhen Xie
 * [GitHub](https://github.com/Kee-Wang/PES-Fitting-MSA)
 * [Blog](https://scholarblogs.emory.edu/bowman/msa/)
