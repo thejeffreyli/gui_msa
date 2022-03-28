@@ -11,7 +11,6 @@
 * [DailyLog.md](./DailyLog.md): Day-to-day journals documenting updates that occur when working on the project.
 * [Original_MSA](./Original_MSA): Original source code by Wang and group. 
 
-Program Requirements
 
 ### Software Used
 MSA Software:
@@ -37,5 +36,7 @@ Working in Ubuntu 20.04:
 * [Anaconda for Linux](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
 
 
+### Acknowledgements
 
 Collaborators: Dr. Joel Bowman, Dr. Chen Qu
+If you have any questions, please contact [Jeffrey Li](jeffrey.k.li98@gmail.com).
