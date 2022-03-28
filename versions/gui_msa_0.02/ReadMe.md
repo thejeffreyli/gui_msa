@@ -1,6 +1,6 @@
 ### Instructions for Version 0.02
 
-![Interface](./versions/gui_msa_0.02/msa_0322.png)
+![Interface](./msa_0322.png)
 
 Input:
 * Max Order: Input the polynomial order you would like to use for the fitting. (example: 4)
