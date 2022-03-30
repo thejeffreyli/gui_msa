@@ -41,7 +41,7 @@ Working in Ubuntu 20.04:
 
 ### Instructions for Version 0.02
 
-![Interface](./versions/gui_msa_0.02/msa_0322.png)
+![Interface](./versions/gui_msa_0.03/msa_0330.png)
 
 Input:
 * Max Order: Input the polynomial order you would like to use for the fitting. (example: 4)

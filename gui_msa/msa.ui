@@ -280,7 +280,7 @@
       <x>20</x>
       <y>280</y>
       <width>671</width>
-      <height>111</height>
+      <height>131</height>
      </rect>
     </property>
     <property name="title">
@@ -337,7 +337,7 @@ enter &quot;n&quot;.</string>
      <property name="geometry">
       <rect>
        <x>550</x>
-       <y>30</y>
+       <y>50</y>
        <width>109</width>
        <height>21</height>
       </rect>
@@ -353,7 +353,7 @@ enter &quot;n&quot;.</string>
      <property name="geometry">
       <rect>
        <x>550</x>
-       <y>60</y>
+       <y>80</y>
        <width>109</width>
        <height>28</height>
       </rect>
@@ -367,7 +367,7 @@ enter &quot;n&quot;.</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>390</y>
+      <y>410</y>
       <width>671</width>
       <height>91</height>
      </rect>
@@ -443,7 +443,7 @@ The recommended range is 2.0-3.0 Bohr.</string>
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>480</y>
+      <y>500</y>
       <width>671</width>
       <height>101</height>
      </rect>
@@ -547,7 +547,7 @@ The recommended range is 2.0-3.0 Bohr.</string>
      <x>0</x>
      <y>0</y>
      <width>724</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

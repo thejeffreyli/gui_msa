@@ -30,6 +30,8 @@ class testWin(QtWidgets.QMainWindow, Ui):
         self.button6.clicked.connect(self.compute) # fitting
         self.button7.clicked.connect(self.exit_) # saves and exit
         
+        # checkBox
+        
     # load data        
     def load(self):
         order = self.lineEdit.text()

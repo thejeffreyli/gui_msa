@@ -138,6 +138,7 @@ Updates:
     (2) Can you modify the third line in the file “src/Makefile” by changing “LIBS = -mkl=sequential” to “LIBS = -qmkl=sequential”? The new Intel MKL changes its syntax a bit so the latest is -qmkl=xxx instead of -mkl=xxx
     (3) In msa_kernel.py, line 42 and 43, can you replace “./postemsa.pl” and “./derivative.pl” with “perl postemsa.pl” and “perl derivative.pl”, respectively? After I download and unzip your code, I have to make those two *.pl files as executables first and then run msa_main.py; otherwise I get an error. Other uses may have the same problem; my suggested modification could prevent this error message even if the two *.pl were not made executables.
 
-### March 29, 2022 (Day 12)
-* Addressed issue regarding scalability across different devices. Reached out to Miaoqi from Argonne APS.
+### March 29-30, 2022 (Day 12-13)
+* Addressed issue regarding scalability across different devices. Reached out to Miaoqi from Argonne APS. 
+* Completely redesigned msa.ui with Qt designer. 
 * Made changes to Makefile and msa_kernel.py.
