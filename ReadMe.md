@@ -39,7 +39,7 @@ Working in Ubuntu 20.04:
 * [Xming](https://sourceforge.net/projects/xming/)
 * [Anaconda for Linux](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
 
-### Instructions for Version 0.02
+### Instructions for Version 0.03
 
 ![Interface](./versions/gui_msa_0.03/msa_0330.png)
 
