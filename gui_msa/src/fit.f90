@@ -26,7 +26,7 @@ program fit
           open(10,file="coeff.dat",status='unknown')
           open(11,FILE="points.eng",status='unknown')
           open(12,file="points.dat",status='old')
-          open(13,file="temp_rmse.txt",status="unknown")
+          open(13,file="output.txt",status="unknown")
         
           allocate(x(ndis))
           allocate(xyz(data_size,natm,3))

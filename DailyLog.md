@@ -113,20 +113,31 @@ Updates:
 * Installed Anaconda for Linux. 
 * Installed Xming for Windows (for graphics).
 * Chen's instructions for overcoming errors. 
-(1) First open Xming. Xming will be running in the background so you won’t notice it’s running until you run Linux applications that has GUI.
-(2) Open your Ubuntu terminal and go to your home directory. You can use a shortcut command “cd ~” to go to your home directory.
-(3) Type command “ls -a” and see if you can find a file called “.bashrc” (or sometimes you cannot find “.bashrc” but a “.bash_profile” exists.) Finding either of them is fine. Note the file name starts with a dot. These files are hidden in Linux, but “-a” flag in the “ls” command allows you to see all the hidden files.
-(4) Modify the “.bashrc” (or “.bash_profile”). Open it with your favorite Linux text editor and insert a line “export DISPLAY=127.0.0.1:0” (without the quotation marks) to that file and save it.
-(5) Start a new Ubuntu terminal (the modification in .bashrc will only be effective in a new terminal). Try xclock in that new terminal and see if you still get that error.
+    (1) First open Xming. Xming will be running in the background so you won’t notice it’s running until you run Linux applications that has GUI.
+    (2) Open your Ubuntu terminal and go to your home directory. You can use a shortcut command “cd ~” to go to your home directory.
+    (3) Type command “ls -a” and see if you can find a file called “.bashrc” (or sometimes you cannot find “.bashrc” but a “.bash_profile” exists.) Finding either of them is fine. Note the file name starts with a dot. These files are hidden in Linux, but “-a” flag in the “ls” command allows you to see all the hidden files.
+    (4) Modify the “.bashrc” (or “.bash_profile”). Open it with your favorite Linux text editor and insert a line “export DISPLAY=127.0.0.1:0” (without the quotation marks) to that file and save it.
+    (5) Start a new Ubuntu terminal (the modification in .bashrc will only be effective in a new terminal). Try xclock in that new terminal and see if you still get that error.
 
 ### March 18-19, 2022 (Day 8 and 9)
 * Asked Chen for assistance with transferring data from Fortran to Python, since fitting was performed in f90. He suggested saving in temp file and reading file to Python. He provided revised msa.py. 
 * Modified Chen's code to suit msa_kernel.py. Instead of saving file as temp, I saved as txt file. 
 * Fitting results are displayed on GUI. 
 
-## Week 3: Cleaning Code and Documenting
+## Week 3-4: Cleaning Code and Documenting
 
 ### March 22, 2022 (Day 10)
 * Made some revisions in GUI template to improve readability and design. 
 * Included functions for saving data into txt files before exiting program. 
 * Began documentation/guide of program.
+
+### March 28, 2022 (Day 11)
+* Implemented documentation.
+* Minor issues found by Chen:
+    (1) Some of the texts are incomplete when I run it on my PC, see the screen shot below. I believe you have already adjusted that and the text should be fine on your PC, but it seems that the texts may still be incomplete on other platforms.
+    (2) Can you modify the third line in the file “src/Makefile” by changing “LIBS = -mkl=sequential” to “LIBS = -qmkl=sequential”? The new Intel MKL changes its syntax a bit so the latest is -qmkl=xxx instead of -mkl=xxx
+    (3) In msa_kernel.py, line 42 and 43, can you replace “./postemsa.pl” and “./derivative.pl” with “perl postemsa.pl” and “perl derivative.pl”, respectively? After I download and unzip your code, I have to make those two *.pl files as executables first and then run msa_main.py; otherwise I get an error. Other uses may have the same problem; my suggested modification could prevent this error message even if the two *.pl were not made executables.
+
+### March 29, 2022 (Day 12)
+* Addressed issue regarding scalability across different devices. Reached out to Miaoqi from Argonne APS.
+* Made changes to Makefile and msa_kernel.py.

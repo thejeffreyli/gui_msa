@@ -89,6 +89,7 @@ class testWin(QtWidgets.QMainWindow, Ui):
         # exit program
         QApplication.quit()                 
         return 
+    
         
 # run GUI
 def run():
