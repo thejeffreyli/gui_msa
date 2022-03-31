@@ -1,7 +1,7 @@
 # from PyQt5 import QtCore
 from msa_ui import Ui_MainWindow as Ui
 from msa_kernel import MSA_Func
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets 
 from PyQt5.QtWidgets import QFileDialog
 
 from PyQt5.QtWidgets import QApplication
@@ -30,7 +30,7 @@ class testWin(QtWidgets.QMainWindow, Ui):
         self.button6.clicked.connect(self.compute) # fitting
         self.button7.clicked.connect(self.exit_) # saves and exit
         
-        # checkBox
+        self.button8.clicked.connect(self.reset_) # saves and exit
         
     # load data        
     def load(self):
@@ -92,10 +92,13 @@ class testWin(QtWidgets.QMainWindow, Ui):
         QApplication.quit()                 
         return 
     
+    def reset_(self):
+        self.mk.clean()
+        QApplication.quit() 
         
 # run GUI
 def run():
-
+    os.environ["QT_ENABLE_HIGHDPI_SCALING"] = "1"
     app = QtWidgets.QApplication(sys.argv)
     win = testWin()
     win.show()

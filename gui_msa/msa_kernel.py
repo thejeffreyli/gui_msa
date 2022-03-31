@@ -122,7 +122,7 @@ class MSA_Func:
           open(10,file="coeff.dat",status='unknown')
           open(11,FILE="points.eng",status='unknown')
           open(12,file="'''+self.outputs["train_x"]+'''",status='old')
-          open(13,file="output.txt",status="unknown")
+          open(13,file="temp_rmse.txt",status="unknown")
         
           allocate(x(ndis))
           allocate(xyz(data_size,natm,3))
@@ -341,6 +341,24 @@ class MSA_Func:
         self.outputs["rmse"] = rmse
         self.outputs["wrmse"] = wrmse
         
-        
-        
+    def clean(self):
+        self.cl('''rm pes_shell.*
+            rm gradient.*
+            rm basis.*
+            rm coeff.dat
+            rm Makefile
+            rm getpot.*
+            rm points.eng
+            rm test.*
+            rm expected.out
+            rm temp_rmse.txt
+            rm output.txt            
+            cd src
+            make clean
+            rm msa
+            rm MOL*
+            rm fit.f90
+            cd emsa
+            make clean''')
+            
         
