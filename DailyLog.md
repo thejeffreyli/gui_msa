@@ -120,6 +120,7 @@ Updates:
     (5) Start a new Ubuntu terminal (the modification in .bashrc will only be effective in a new terminal). Try xclock in that new terminal and see if you still get that error.
 
 ### March 18-19, 2022 (Day 8 and 9)
+Updates:
 * Asked Chen for assistance with transferring data from Fortran to Python, since fitting was performed in f90. He suggested saving in temp file and reading file to Python. He provided revised msa.py. 
 * Modified Chen's code to suit msa_kernel.py. Instead of saving file as temp, I saved as txt file. 
 * Fitting results are displayed on GUI. 
@@ -127,11 +128,13 @@ Updates:
 ## Week 3-4: Cleaning Code and Documenting
 
 ### March 22, 2022 (Day 10)
+Updates:
 * Made some revisions in GUI template to improve readability and design. 
 * Included functions for saving data into txt files before exiting program. 
 * Began documentation/guide of program.
 
 ### March 28, 2022 (Day 11)
+Updates:
 * Implemented documentation.
 * Minor issues found by Chen:
     (1) Some of the texts are incomplete when I run it on my PC, see the screen shot below. I believe you have already adjusted that and the text should be fine on your PC, but it seems that the texts may still be incomplete on other platforms.
@@ -139,6 +142,17 @@ Updates:
     (3) In msa_kernel.py, line 42 and 43, can you replace “./postemsa.pl” and “./derivative.pl” with “perl postemsa.pl” and “perl derivative.pl”, respectively? After I download and unzip your code, I have to make those two *.pl files as executables first and then run msa_main.py; otherwise I get an error. Other uses may have the same problem; my suggested modification could prevent this error message even if the two *.pl were not made executables.
 
 ### March 29-30, 2022 (Day 12-13)
-* Addressed issue regarding scalability across different devices. Reached out to Miaoqi from Argonne APS. 
-* Completely redesigned msa.ui with Qt designer. 
+Bugs:
+
+Updates:
+* Addressed issue regarding scalability across different screen resolutions. Reached out to Miaoqi from Argonne APS. 
+* Completely redesigned msa.ui with Qt designer. Used Layouts for textlabels. 
 * Made changes to Makefile and msa_kernel.py.
+
+### March 31, 2022 (Day 14)
+Bugs:
+
+Updates:
+* Troubleshooting issues with qlabel. Figured it might have to do with screen resolution I am developing in. 
+* Redesigned ui template again with smaller laptop resolution rather than desktop monitor resolution. Seems to resolve issue.
+* Added function for resetting directory to default.

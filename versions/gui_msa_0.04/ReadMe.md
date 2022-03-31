@@ -1,10 +1,9 @@
-### Instructions for Version 0.03
-
-![Interface](./msa_0330.png)
+### Instructions for Version 0.04
+![Interface](./msa_0331.png)
 
 Input:
 * Max Order: Input the polynomial order you would like to use for the fitting. (example: 4)
-* Permutation Symm: Input the molecular formula (or the permutational symmetry group). (example: 2 2 1)
+* Permutation Symmetry: Input the molecular formula (or the permutational symmetry group). (example: 2 2 1)
 * Data File Name: Input the name of the data file. (example: points.dat)
 * Generate Basis: Uses the data provided in previous steps to generate basis. 
 
@@ -23,7 +22,9 @@ Fitting: The program fits the potential energy surface and when it finishes, the
 * Compute: Generates fits and displays RMSE.
 * Exit: Saves the values in an output.txt file and terminates program.
 
-
+Reset:
+* Resets the directory to default. Removes everything, including ALL output files. Be sure to save all desired files in another location prior to resetting.
+* Exits program when finished.
 
 
 
