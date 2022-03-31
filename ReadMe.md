@@ -41,11 +41,11 @@ Working in Ubuntu 20.04:
 
 ### Instructions for Version 0.03
 
-![Interface](./versions/gui_msa_0.03/msa_0330.png)
+![Interface](./versions/gui_msa_0.03/msa_0331.png)
 
 Input:
 * Max Order: Input the polynomial order you would like to use for the fitting. (example: 4)
-* Permutation Symm: Input the molecular formula (or the permutational symmetry group). (example: 2 2 1)
+* Permutation Symmetry: Input the molecular formula (or the permutational symmetry group). (example: 2 2 1)
 * Data File Name: Input the name of the data file. (example: points.dat)
 * Generate Basis: Uses the data provided in previous steps to generate basis. 
 
@@ -63,6 +63,11 @@ Parameters:
 Fitting: The program fits the potential energy surface and when it finishes, the root-mean-square fitting error (RMSE) and weighted RMSE are displayed. The coefficients of the fit is written in "coeff.dat", and three Fortran code files "pes_shell.f90", "basis.f90", and "gradient.f90" are also generated.
 * Compute: Generates fits and displays RMSE.
 * Exit: Saves the values in an output.txt file and terminates program.
+
+Reset:
+* Resets the directory to default. Removes everything, including ALL output files. Be sure to save all desired files in another location prior to resetting.
+* Exits program when finished.
+
 
 ### Acknowledgements
 
