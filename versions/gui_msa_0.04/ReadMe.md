@@ -1,4 +1,7 @@
 ### Instructions for Version 0.04
+
+Using Linux environment: python3 msa_main.py 
+
 ![Interface](./msa_0331.png)
 
 Input:
