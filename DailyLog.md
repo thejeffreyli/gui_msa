@@ -135,14 +135,14 @@ Updates:
 
 ### March 28, 2022 (Day 11)
 Updates:
-* Implemented documentation.
-* Minor issues found by Chen:
-    (1) Some of the texts are incomplete when I run it on my PC, see the screen shot below. I believe you have already adjusted that and the text should be fine on your PC, but it seems that the texts may still be incomplete on other platforms.
-    (2) Can you modify the third line in the file “src/Makefile” by changing “LIBS = -mkl=sequential” to “LIBS = -qmkl=sequential”? The new Intel MKL changes its syntax a bit so the latest is -qmkl=xxx instead of -mkl=xxx
-    (3) In msa_kernel.py, line 42 and 43, can you replace “./postemsa.pl” and “./derivative.pl” with “perl postemsa.pl” and “perl derivative.pl”, respectively? After I download and unzip your code, I have to make those two *.pl files as executables first and then run msa_main.py; otherwise I get an error. Other uses may have the same problem; my suggested modification could prevent this error message even if the two *.pl were not made executables.
+* Implemented documentation and release information on GitHub repo.
 
 ### March 29-30, 2022 (Day 12-13)
-Bugs:
+Bugs reported by Chen:
+* Texts may still be incomplete on other platforms.
+* Modify the third line in the file “src/Makefile” by changing “LIBS = -mkl=sequential” to “LIBS = -qmkl=sequential”. The new Intel MKL changes its syntax a bit so the latest is
+-qmkl=xxx instead of -mkl=xxx.
+* In msa_kernel.py, replace “./postemsa.pl” and “./derivative.pl” with “perl postemsa.pl” and “perl derivative.pl”, respectively. 
 
 Updates:
 * Addressed issue regarding scalability across different screen resolutions. Reached out to Miaoqi from Argonne APS. 
@@ -150,7 +150,9 @@ Updates:
 * Made changes to Makefile and msa_kernel.py.
 
 ### March 31, 2022 (Day 14)
-Bugs:
+Bugs reported by Chen:
+* Recurring text visibility issue on different platforms. 
+* temp_rmse.txt is not generated. Error occurs when the program later attempts to open this file and read the RMSE.
 
 Updates:
 * Troubleshooting issues with qlabel. Figured it might have to do with screen resolution I am developing in. 
