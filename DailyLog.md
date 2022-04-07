@@ -138,7 +138,7 @@ Updates:
 * Implemented documentation and release information on GitHub repo.
 
 ### March 29-30, 2022 (Day 12-13)
-Bugs reported by Chen:
+Bugs reported in 0.02 by Chen:
 * Texts may still be incomplete on other platforms.
 * Modify the third line in the file “src/Makefile” by changing “LIBS = -mkl=sequential” to “LIBS = -qmkl=sequential”. The new Intel MKL changes its syntax a bit so the latest is
 -qmkl=xxx instead of -mkl=xxx.
@@ -150,7 +150,7 @@ Updates:
 * Made changes to Makefile and msa_kernel.py.
 
 ### March 31, 2022 (Day 14)
-Bugs reported by Chen:
+Bugs reported in 0.03 by Chen:
 * Recurring text visibility issue on different platforms. 
 * temp_rmse.txt is not generated. Error occurs when the program later attempts to open this file and read the RMSE.
 
