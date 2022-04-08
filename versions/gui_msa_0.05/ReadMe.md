@@ -1,21 +1,3 @@
-## Python Graphical User Interface (GUI) Application for Monomial Symmetrization for Potential Energy Surface (PES) Fitting
-
-### Description
-
-TBA
-
-### Original Work by Kee Wang, Chen Qu, Zhen Xie, and Joel Bowman
-* [GitHub](https://github.com/Kee-Wang/PES-Fitting-MSA)
-* [Blog](https://scholarblogs.emory.edu/bowman/msa/)
-
-### Contents
-
-* [Readings](./Readings): Available PDFs of helpful literature.
-* [versions](./versions): Repository for current and past versions of program. Last updated 03/22/2022.
-* [DailyLog.md](./DailyLog.md): Day-to-day journals documenting updates that occur when working on the project.
-* [Original_MSA](./Original_MSA): Original source code by Wang and group. 
-
-
 ### Software Used
 
 Requirements: To use this software, you need a Fortran 90, a C++ compiler, a linear algebra library, Perl and Python.
@@ -73,16 +55,6 @@ Fitting: The program fits the potential energy surface and when it finishes, the
 Reset:
 * Resets the directory to default. Removes everything, including ALL output files. Be sure to save all desired files in another location prior to resetting.
 * Terminates program when finished.
-
-
-
-### Acknowledgements
-
-Collaborators: Dr. Joel Bowman, Dr. Chen Qu
-If you have any questions, please contact [Jeffrey Li](jeffrey.k.li98@gmail.com).
-
-
-
 
 
 
