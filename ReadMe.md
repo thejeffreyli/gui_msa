@@ -28,7 +28,7 @@ MSA Software:
 * [Intel® oneAPI HPC Toolkit for Linux](https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit-download.html):
     (1) Intel® Fortran Compiler Classic
     (2) Intel® C++ Compiler Classic
-* Helpful [link](https://estuarine.jp/2021/03/install-oneapi/?lang=en) for tips on properly installing iFort. <!--- (i.e. source /opt/intel/oneapi/setvars.sh) -->
+* Helpful [link](https://estuarine.jp/2021/03/install-oneapi/?lang=en) for tips on properly initializing ifort. <!--- (i.e. source /opt/intel/oneapi/setvars.sh) -->
 
 GUI Development:
 * PyQt5 5.15.6
@@ -36,12 +36,12 @@ GUI Development:
 * [Helpful tutorial](https://www.techwithtim.net/tutorials/pyqt5-tutorial/how-to-use-qtdesigner/)
 
 Working in Ubuntu 20.04:
-* [Xming](https://sourceforge.net/projects/xming/)
+* [Xming](https://sourceforg e.net/projects/xming/)
 * [Anaconda for Linux](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
 
 ### Instructions for Version 0.04
 
-Using Linux environment, on CMD prompt: python3 msa_main.py 
+Using Linux environment, on CMD prompt: 'python3 msa_main.py'.
 
 ![Interface](./versions/gui_msa_0.04/msa_0331.png)
 
