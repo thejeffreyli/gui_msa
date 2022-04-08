@@ -41,7 +41,7 @@ Working in Ubuntu 20.04:
 
 ### Instructions for Version 0.04
 
-Using Linux environment, on CMD prompt: 'python3 msa_main.py'.
+Using Linux environment, on CMD prompt: python3 msa_main.py .
 
 ![Interface](./versions/gui_msa_0.04/msa_0331.png)
 
