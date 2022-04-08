@@ -11,7 +11,7 @@ TBA
 ### Contents
 
 * [Readings](./Readings): Available PDFs of helpful literature.
-* [versions](./versions): Repository for current and past versions of program. Last updated 03/22/2022.
+* [versions](./versions): Repository for current and past versions of program. Last updated 04/08/2022.
 * [DailyLog.md](./DailyLog.md): Day-to-day journals documenting updates that occur when working on the project.
 * [Original_MSA](./Original_MSA): Original source code by Wang and group. 
 
