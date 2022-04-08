@@ -39,7 +39,7 @@ GUI Development:
 * [Helpful tutorial](https://www.techwithtim.net/tutorials/pyqt5-tutorial/how-to-use-qtdesigner/)
 
 Working in Ubuntu 20.04:
-* [Xming](https://sourceforg e.net/projects/xming/)
+* [Xming](https://sourceforge.net/projects/xming/)
 * [Anaconda for Linux](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
 
 
@@ -47,7 +47,7 @@ Working in Ubuntu 20.04:
 
 Using Linux environment, on CMD prompt: python3 msa_main.py 
 
-![Interface](./msa_0408.png)
+![Interface](./versions/gui_msa_0.05/msa_0408.png)
 
 Input:
 * Max Order: Input the polynomial order you would like to use for the fitting. (example: 4)

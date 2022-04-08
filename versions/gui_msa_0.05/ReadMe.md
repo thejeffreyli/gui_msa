@@ -21,7 +21,7 @@ GUI Development:
 * [Helpful tutorial](https://www.techwithtim.net/tutorials/pyqt5-tutorial/how-to-use-qtdesigner/)
 
 Working in Ubuntu 20.04:
-* [Xming](https://sourceforg e.net/projects/xming/)
+* [Xming](https://sourceforge.net/projects/xming/)
 * [Anaconda for Linux](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
 
 
