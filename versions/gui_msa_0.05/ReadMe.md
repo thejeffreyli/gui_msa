@@ -1,6 +1,6 @@
 ### Software Used
 
-Requirements: To use this software, you need a Fortran 90, a C++ compiler, a linear algebra library, Perl and Python.
+Requirements: To use this software, you need a Fortran 90, a C++ compiler, a linear algebra library, Perl and Python. Ensure Makefiles reflect any adjustments. 
 
 MSA Software:
 * Python 3.8.8 / Spyder
