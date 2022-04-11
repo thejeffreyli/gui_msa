@@ -190,3 +190,11 @@ Updates:
 Updates:
 * Added new Read section on GUI template to warn users of software requirements.
 * Added software requirements/used on ReadMe files. 
+
+
+### April 11, 2022 (Day 17)
+Updates:
+* Updated Read section to reference instructions on GitHub. Added text instructions on Fitting section. Updated text on Reset Section.
+* Chen suggested having texts show up on the GUI after the users click buttons. This will help users know what to do next. Currently, nothing appears in the frontend when 'Continue,' 'Exit' (2x), 'Input' (2x), etc. are pressed. 
+* Implemented popup messages that appear whenever buttons are clicked to inform users on successful backend actions and provide information on what to do next. 
+* Improved backend logic. If inputs are left blank, an error message will pop up for users to check arguments and try again. 
