@@ -25,7 +25,7 @@ Working in Ubuntu 20.04:
 * [Anaconda for Linux](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
 
 
-### Instructions for Version 0.05
+### Instructions for Version 0.06
 
 Using Linux environment, on CMD prompt: python3 msa_main.py 
 

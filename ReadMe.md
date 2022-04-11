@@ -11,7 +11,7 @@ TBA
 ### Contents
 
 * [Readings](./Readings): Available PDFs of helpful literature.
-* [versions](./versions): Repository for current and past versions of program. Last updated 04/08/2022.
+* [versions](./versions): Repository for current and past versions of program. Last updated 04/11/2022.
 * [DailyLog.md](./DailyLog.md): Day-to-day journals documenting updates that occur when working on the project.
 * [Original_MSA](./Original_MSA): Original source code by Wang and group. 
 
@@ -43,11 +43,11 @@ Working in Ubuntu 20.04:
 * [Anaconda for Linux](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
 
 
-### Instructions for Version 0.05
+### Instructions for Version 0.06
 
 Using Linux environment, on CMD prompt: python3 msa_main.py 
 
-![Interface](./versions/gui_msa_0.05/msa_0408.png)
+![Interface](./versions/gui_msa_0.06/msa_0411.png)
 
 Input:
 * Max Order: Input the polynomial order you would like to use for the fitting. (example: 4)
