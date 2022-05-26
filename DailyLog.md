@@ -198,3 +198,8 @@ Updates:
 * Chen suggested having texts show up on the GUI after the users click buttons. This will help users know what to do next. Currently, nothing appears in the frontend when 'Continue,' 'Exit' (2x), 'Input' (2x), etc. are pressed. 
 * Implemented popup messages that appear whenever buttons are clicked to inform users on successful backend actions and provide information on what to do next. 
 * Improved backend logic. If inputs are left blank, an error message will pop up for users to check arguments and try again. 
+
+### May 25, 2022 (Day 18)
+Updates:
+* Updated ReadMe.
+* Pushed Version 0.07. 
