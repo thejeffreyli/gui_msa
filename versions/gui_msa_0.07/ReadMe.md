@@ -29,9 +29,8 @@ Working in Ubuntu 20.04:
 After downloading and unzipping the "MSA", the following folders and
 files should be in the package:
 
-*  A folder called "src", which contains the source codes. Inside it
-    there are
-    (a) A folder called "emsa", which contains the C++ codes that
+1. A folder called "src", which contains the source codes. Inside it there are:
+    - A folder called "emsa", which contains the C++ codes that
         generate the monomials and polynomials.
     (b) a test program "getpot.f90" that uses the fitted potential to
         calculate the potential of a given geometry.
