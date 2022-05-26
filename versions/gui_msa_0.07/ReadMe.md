@@ -72,7 +72,7 @@ python3 msa_main.py
 4. Parameters: The program asks you to input the a0 parameter (in unit Bohr) used in the Morse variable yij = exp(-rij/a0). 
     - Input: Enter the a0 parameter you would like to use. We recommend values between 2.0 and 3.0 Bohr. Moves on to next step.
 
-5. Fitting: The program fits the potential energy surface and when it finishes, the root-mean-square fitting error (RMSE) and weighted RMSE are displayed. The coefficients of the fit are written in "coeff.dat."
+5. Fitting: The program fits the potential energy surface and when it finishes, the root-mean-square fitting error (RMSE) and weighted RMSE are displayed. The coefficients of the fit are written in 'coeff.dat.'
     - Compute: Generates fits and displays RMSE.
     - Exit: Saves the values in an output.txt file and terminates program.
 
@@ -87,16 +87,7 @@ python3 msa_main.py
     ./getpot.x test.xyz
     ```
     
-    The results is written in test.out, and if you use polynomial order 4
-    and symmetry group 2 2 1 as we did in the video, the results in the
-    "test.out" should be the same as those in "expected.out". Of course,
-    small numerical error is allowed.
-
-8. If you would like to use the fit in your own program, pes_shell.f90,
-    basis.f90, gradient.f90, and coeff.dat are necessary. Copy these four
-    files to the folder that contains your own program, and in your own
-    Fortran code, insert "use pes_shell", and "call pes_init()", (as we
-    do in the "getpot.f90" example), and you can calculate the potential
-    of any configuration using the "f" function, and the gradient using the
-    "g" function.
+    The results is written in test.out.
+ 
+8. If you would like to use the fit in your own program, 'pes_shell.f90,' 'basis.f90,' 'gradient.f90,' and 'coeff.dat' are necessary. Copy these four files to the folder that contains your own program, and in your own Fortran code, insert "use pes_shell", and "call pes_init()", (as we do in the "getpot.f90" example), and you can calculate the potential of any configuration using the "f" function, and the gradient using the "g" function.
 
