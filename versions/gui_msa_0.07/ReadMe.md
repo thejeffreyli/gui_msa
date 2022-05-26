@@ -90,3 +90,8 @@ python3 msa_main.py
  
 8. If you would like to use the fit in your own program, 'pes_shell.f90,' 'basis.f90,' 'gradient.f90,' and 'coeff.dat' are necessary. Copy these four files to the folder that contains your own program, and in your own Fortran code, insert "use pes_shell", and "call pes_init()", (as we do in the "getpot.f90" example), and you can calculate the potential of any configuration using the "f" function, and the gradient using the "g" function.
 
+
+### Acknowledgements
+
+Collaborators: Dr. Joel Bowman, Dr. Chen Qu
+If you have any questions, please contact [Jeffrey Li](jeffrey.k.li98@gmail.com) or [Dr. Chen Qu](szquchen@gmail.com).
