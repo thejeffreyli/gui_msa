@@ -1,3 +1,9 @@
+## Python Graphical User Interface (GUI) Application for Monomial Symmetrization for Potential Energy Surface (PES) Fitting
+
+### Description
+
+This program provides an easy-to-use, Python-based graphical user interface (GUI) for running MSA software. MSA is a software that does a fit of electronic energies using fitting bases that are invariant with respect to permutations of like atoms. 
+
 ### Software Used
 
 Requirements: To use this software, you need a Fortran 90, a C++ compiler, a linear algebra library, Perl and Python. Ensure Makefiles reflect any adjustments. 
