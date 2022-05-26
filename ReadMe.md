@@ -2,7 +2,7 @@
 
 ### Description
 
-This program provides an easy-to-use, Python-based graphical user interface (GUI) for running MSA software for generating basis and fitting. MSA is a software that does a fit of electronic energies using fitting bases that are invariant with respect to permutations of like atoms. 
+This program provides an easy-to-use, Python-based graphical user interface (GUI) for running MSA software. MSA is a software that does a fit of electronic energies using fitting bases that are invariant with respect to permutations of like atoms. 
 
 ### Original Work by Kee Wang, Chen Qu, Zhen Xie, and Joel Bowman
 * [GitHub](https://github.com/Kee-Wang/PES-Fitting-MSA)
