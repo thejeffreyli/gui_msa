@@ -30,20 +30,21 @@ After downloading and unzipping the "MSA", the following folders and
 files should be in the package:
 
 1. A folder called "src", which contains the source codes. Inside it there are:
-    - A folder called "emsa", which contains the C++ codes that
-        generate the monomials and polynomials.
-    (b) a test program "getpot.f90" that uses the fitted potential to
-        calculate the potential of a given geometry.
-    (c) A Makefile that is used to compile the Fortran codes.
-    (d) A test data file "test.xyz" that contains an arbitrary geometry
-        of the H2-H2O. This test data is used by the "getpot" program
-        and the expected output is written in the file "expected.out".
-    (e) Two Perl scripts.
+    - A folder called "emsa", which contains the C++ codes that generate the monomials and polynomials.
+    - a test program "getpot.f90" that uses the fitted potential to calculate the potential of a given geometry.
+    - A Makefile that is used to compile the Fortran codes.
+    - A test data file "test.xyz" that contains an arbitrary geometry of the H2-H2O. This test data is used by the "getpot" program and the expected output is written in the file "expected.out".
+    - Two Perl scripts.
 
-*  A example data file "points.dat" that contains 44623 geometries
-    of H2-H2O and the corresponding interaction energies. This is
-    the database used to fit the potential.
+2. A example data file "points.dat" that contains 44623 geometries of H2-H2O and the corresponding interaction energies. This is the database used to fit the potential.
 
+3. Three Python files which will be used for running the GUI and finding the fit. 'msa_main.py' and 'msa_kernel.py' are responsible for functions behind the GUI's modules. 'msa_ui.py' is responsible for the GUI layout using PyQt5. 
+
+4. A UI file which can be run using QtDesigner to make any modifications to the GUI layout. 
+
+5. An image file of the GUI.
+
+6. This 'ReadMe.MD' file. 
 
 ### Instructions for Version 0.06
 
