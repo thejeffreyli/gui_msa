@@ -201,5 +201,5 @@ Updates:
 
 ### May 25, 2022 (Day 18)
 Updates:
-* Updated ReadMe.
+* Updated ReadMe on GitHub and in code directory. 
 * Pushed Version 0.07. 
