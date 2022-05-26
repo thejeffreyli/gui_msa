@@ -48,7 +48,7 @@ files should be in the package:
 
 ### Instructions for Version 0.07 (adapted from [Original Work by Kee Wang and Group](https://github.com/Kee-Wang/PES-Fitting-MSA)):
 
-Using Linux environment, on CMD prompt: 
+Using Linux environment, use command: 
 ```
 python3 msa_main.py 
 ```
@@ -62,15 +62,14 @@ python3 msa_main.py
     - Data File Name: Input the name of the data file. (example: points.dat)
     - Generate Basis: Uses the data provided in previous steps to generate basis. Two Fortran code files will be generated: 'gradient.f90' and 'basis.f90.'
 
-2. Output: 
-    - The program displays the number of coefficients and the number of configurations in the data file. If the number of coefficients is too small (which leads to large fitting error) or too large (which may cause over-fitting), you can Exit the program and then pick another polynomial order. You can Continue if satisfied.
+2. Output: The program displays the number of coefficients and the number of configurations in the data file. If the number of coefficients is too small (which leads to large fitting error) or too large (which may cause over-fitting), you can Exit the program and then pick another polynomial order. You can Continue if satisfied.
     - Continue: Saves the values in an output.txt file. Moves on to next step.
     - Exit: Saves the values in an output.txt file and terminates program.
 
-3. Weights: 
+3. Weights: The program asks you if you would like to apply weight to the points in the fitting. 
     - Input: If you would like to apply weight, input the parameter. If you do not want to add weight, enter "n". Moves on to next step.
 
-4. Parameters: 
+4. Parameters: The program asks you to input the a0 parameter (in unit Bohr) used in the Morse variable yij = exp(-rij/a0). 
     - Input: Enter the a0 parameter you would like to use. We recommend values between 2.0 and 3.0 Bohr. Moves on to next step.
 
 5. Fitting: The program fits the potential energy surface and when it finishes, the root-mean-square fitting error (RMSE) and weighted RMSE are displayed. The coefficients of the fit are written in "coeff.dat."
@@ -82,4 +81,22 @@ python3 msa_main.py
     - Terminates program when finished.
 
 
+7. The test program "getpot.x" is compiled, and if you would like to run
+    the test, use the command
+    ```
+    ./getpot.x test.xyz
+    ```
+    
+    The results is written in test.out, and if you use polynomial order 4
+    and symmetry group 2 2 1 as we did in the video, the results in the
+    "test.out" should be the same as those in "expected.out". Of course,
+    small numerical error is allowed.
+
+8. If you would like to use the fit in your own program, pes_shell.f90,
+    basis.f90, gradient.f90, and coeff.dat are necessary. Copy these four
+    files to the folder that contains your own program, and in your own
+    Fortran code, insert "use pes_shell", and "call pes_init()", (as we
+    do in the "getpot.f90" example), and you can calculate the potential
+    of any configuration using the "f" function, and the gradient using the
+    "g" function.
 
