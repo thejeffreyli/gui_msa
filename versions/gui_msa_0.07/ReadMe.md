@@ -25,7 +25,7 @@ Working in Ubuntu 20.04:
 * [Anaconda for Linux](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04)
 
 
-### Breakdown of Directories (adapted from [Original Work by Kee Wang](https://github.com/Kee-Wang/PES-Fitting-MSA)):
+### Breakdown of Directories (adapted from [Original Work by Kee Wang and Group](https://github.com/Kee-Wang/PES-Fitting-MSA)):
 After downloading and unzipping the "MSA", the following folders and
 files should be in the package:
 
@@ -38,15 +38,15 @@ files should be in the package:
 
 2. A example data file "points.dat" that contains 44623 geometries of H2-H2O and the corresponding interaction energies. This is the database used to fit the potential.
 
-3. Three Python files which will be used for running the GUI and finding the fit. 'msa_main.py' and 'msa_kernel.py' are responsible for functions behind the GUI's modules. 'msa_ui.py' is responsible for the GUI layout using PyQt5. 
+3. Three Python files which will be used for running the GUI and finding the fit. 'msa_main.py' and 'msa_kernel.py' are responsible for functions behind the GUI's modules. 'msa_ui.py' is responsible for the GUI layout, created using PyQt5 package. 
 
 4. A UI file which can be run using QtDesigner to make any modifications to the GUI layout. 
 
-5. An image file of the GUI.
+5. An image file of the GUI application.
 
 6. This 'ReadMe.MD' file. 
 
-### Instructions for Version 0.06
+### Instructions for Version 0.07 (adapted from [Original Work by Kee Wang and Group](https://github.com/Kee-Wang/PES-Fitting-MSA)):
 
 Using Linux environment, on CMD prompt: 
 ```
@@ -54,30 +54,32 @@ python3 msa_main.py
 ```
 ![Interface](./msa_0411.png)
 
-Input:
-* Max Order: Input the polynomial order you would like to use for the fitting. (example: 4)
-* Permutation Symmetry: Input the molecular formula (or the permutational symmetry group). (example: 2 2 1)
-* Data File Name: Input the name of the data file. (example: points.dat)
-* Generate Basis: Uses the data provided in previous steps to generate basis. Two Fortran code files will be generated: 'gradient.f90' and 'basis.f90.'
+1. Input:
+    - Max Order: Input the polynomial order you would like to use for the fitting. The number of coefficients increases rapidly when the polynomial order becomes larger. So you may want
+        to start with low polynomial orders. (example: 4) 
+    - Permutation Symmetry: Input the molecular formula (or the permutational symmetry group). (example: 2 2 1)
+        - Our example is H2-H2O, and we use 2 2 1 here. The full symmetry is 4 1, but we don't expect any H exchange between H2 and H2O, so 2 2 1 is also a reasonable choice.
+    - Data File Name: Input the name of the data file. (example: points.dat)
+    - Generate Basis: Uses the data provided in previous steps to generate basis. Two Fortran code files will be generated: 'gradient.f90' and 'basis.f90.'
 
-Output: 
-* The program displays the number of coefficients and the number of configurations in the data file. If the number of coefficients is too small (which leads to large fitting error) or too large (which may cause over-fitting), you can Exit the program and then pick another polynomial order. You can Continue if satisfied.
-* Continue: Saves the values in an output.txt file. Moves on to next step.
-* Exit: Saves the values in an output.txt file and terminates program.
+2. Output: 
+    - The program displays the number of coefficients and the number of configurations in the data file. If the number of coefficients is too small (which leads to large fitting error) or too large (which may cause over-fitting), you can Exit the program and then pick another polynomial order. You can Continue if satisfied.
+    - Continue: Saves the values in an output.txt file. Moves on to next step.
+    - Exit: Saves the values in an output.txt file and terminates program.
 
-Weights: 
-* Input: If you would like to apply weight, input the parameter. If you do not want to add weight, enter "n". Moves on to next step.
+3. Weights: 
+    - Input: If you would like to apply weight, input the parameter. If you do not want to add weight, enter "n". Moves on to next step.
 
-Parameters: 
-* Input: Enter the a0 parameter you would like to use. We recommend values between 2.0 and 3.0 Bohr. Moves on to next step.
+4. Parameters: 
+    - Input: Enter the a0 parameter you would like to use. We recommend values between 2.0 and 3.0 Bohr. Moves on to next step.
 
-Fitting: The program fits the potential energy surface and when it finishes, the root-mean-square fitting error (RMSE) and weighted RMSE are displayed. The coefficients of the fit are written in "coeff.dat."
-* Compute: Generates fits and displays RMSE.
-* Exit: Saves the values in an output.txt file and terminates program.
+5. Fitting: The program fits the potential energy surface and when it finishes, the root-mean-square fitting error (RMSE) and weighted RMSE are displayed. The coefficients of the fit are written in "coeff.dat."
+    - Compute: Generates fits and displays RMSE.
+    - Exit: Saves the values in an output.txt file and terminates program.
 
-Reset:
-* Resets the directory to default. Removes everything, including ALL output files. Be sure to save all desired files in another location prior to resetting.
-* Terminates program when finished.
+6. Reset:
+    - Resets the directory to default. Removes everything, including ALL output files. Be sure to save all desired files in another location prior to resetting.
+    - Terminates program when finished.
 
 
 
