@@ -114,7 +114,7 @@ python3 msa_main.py
 ### Acknowledgements
 
 Collaborators: Dr. Joel Bowman, Dr. Chen Qu
-If you have any questions, please contact [Jeffrey Li](jeffrey.k.li98@gmail.com).
+If you have any questions, please contact [Jeffrey Li](jeffrey.k.li98@gmail.com) or [Dr. Chen Qu](szquchen@gmail.com).
 
 
 
