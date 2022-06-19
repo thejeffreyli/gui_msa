@@ -1,7 +1,5 @@
 ## Week 0: Requirements, Setting Up
 
-<br />
-
 ### Original Work by Kee Wang, Chen Qu, and Zhen Xie
 * [GitHub](https://github.com/Kee-Wang/PES-Fitting-MSA)
 * [Blog](https://scholarblogs.emory.edu/bowman/msa/)
