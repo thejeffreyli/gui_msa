@@ -36,17 +36,17 @@ Working in Ubuntu 20.04:
 Updates:
 * Begin designing template for first stage of workflow using QtDesigner. Example process shown below. 
 * Inputs: 
-    (1) Please input the maximum order of the polynomial: int value, ex: 4
-    (2) Please input the maximum order of the polynomial: int values separated by space, ex: 2 2 1
-    (3) Please input the name of the data file: string name of file, ex: points.dat
+    - Please input the maximum order of the polynomial: int value, ex: 4
+    - Please input the maximum order of the polynomial: int values separated by space, ex: 2 2 1
+    - Please input the name of the data file: string name of file, ex: points.dat
 * Outputs: 
-    1. Input file info:
-    Number of atoms is : 5
-    Number of configurations is: 44623.0
+    - Input file info:
+        - Number of atoms is : 5
+        -  Number of configurations is: 44623.0
 
-    2. Polynomial info:
-    Given polynomial order: 4
-    Given symmetry: 2 2 1
+    - Polynomial info:
+        - Given polynomial order: 4
+        - Given symmetry: 2 2 1
     Number of coefficients is: 323
 * Testing inputs and outputs. 
 * Explanation: User inputs three values into GUI. GUI will output and display five values for user. User can decide to proceed or not to proceed given information. 
