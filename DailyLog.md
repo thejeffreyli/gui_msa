@@ -11,11 +11,11 @@ MSA Software:
 * Ubuntu 20.04 - Linux Environment (Windows Store)
 * build-essential (g++ compiler, sudo apt-get install build-essential)
 * [Intel® oneAPI Base Toolkit for Linux](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html): 
-    (1) Intel® oneAPI Math Kernel Library
+    - Intel® oneAPI Math Kernel Library
 
 * [Intel® oneAPI HPC Toolkit for Linux](https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit-download.html):
-    (1) Intel® Fortran Compiler Classic
-    (2) Intel® C++ Compiler Classic
+    - Intel® Fortran Compiler Classic
+    - Intel® C++ Compiler Classic
 * Helpful [link](https://estuarine.jp/2021/03/install-oneapi/?lang=en) for tips on properly installing iFort. <!--- (i.e. source /opt/intel/oneapi/setvars.sh) -->
 
 GUI Development:
